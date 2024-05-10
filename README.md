@@ -6,11 +6,11 @@ Potato Disease Classification System is a project aimed at developing a deep lea
 ## Installation
 ```
 $ git clone https://github.com/Mokkshking/Potato-Disease-Classification-System-using-Convolutional-Neural-Networks-CNN-.git
-
+$ cd Potato-Disease-Classification-System-using-Convolutional-Neural-Networks-CNN-
+```
 or 
-
+```
 $ git clone https://github.com/shivankursharma018/Potato-Disease-Classification-System-using-Convolutional-Neural-Networks-CNN.git
-
 $ cd Potato-Disease-Classification-System-using-Convolutional-Neural-Networks-CNN
 ```
 
@@ -58,4 +58,4 @@ Develop a system capable of accurately classifying potato diseases into Late Bli
 
 ## Contributors
 - Mokksh Kapur      : Project Lead
-- Shiavnkur Sharma  : Contributer
+- Shivankur Sharma  : Contributer
