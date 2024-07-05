@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import tensorflow as tf
 import cv2
@@ -12,10 +13,17 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+# Function to get the model path by navigating to the previous directory
+def get_model_path():
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    parent_dir = os.path.dirname(current_dir)
+    model_path = os.path.join(parent_dir, 'saved_models', '1.keras')
+    return model_path
+
 # Function to load the model
 @st.cache_resource
 def load_model():
-    model_path = 'D:/_programming/Potato-Disease-Classification-System-using-Convolutional-Neural-Networks-CNN/saved_models/1.keras'
+    model_path = get_model_path()
     model = tf.keras.models.load_model(model_path)
     return model
 
@@ -45,5 +53,5 @@ else:
     image = Image.open(file)
     st.image(image, use_column_width=True)
     predicted_class, confidence = import_and_predict(image, model)
-    string = f"Predicted label: {predicted_class}\nConfidence: {confidence}%"
+    string = f"Predicted label: {predicted_class}\n\rConfidence: {confidence}%"
     st.success(string)
