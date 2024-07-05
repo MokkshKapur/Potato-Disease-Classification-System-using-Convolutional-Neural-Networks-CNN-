@@ -1,6 +1,8 @@
 tensorflow==2.14.1
 fastapi
 uvicorn
+opencv-python
+opencv-python-headless
 python-multipart
 pillow
 streamlit
