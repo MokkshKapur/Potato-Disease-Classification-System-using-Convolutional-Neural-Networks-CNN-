@@ -17,7 +17,7 @@ st.set_page_config(
 def get_model_path():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.dirname(current_dir)
-    model_path = os.path.join('saved_models', '1.keras')
+    model_path = os.path.join(parent_dir+'/saved_models/', '1.keras')
     return model_path
 
 # Function to load the model
