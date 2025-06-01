@@ -1,4 +1,5 @@
 streamlit==1.32.2
-tensorflow-cpu
+torch
+torchvision
 Pillow==10.2.0
 numpy==1.24.3
