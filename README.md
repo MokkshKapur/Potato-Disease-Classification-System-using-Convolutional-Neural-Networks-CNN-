@@ -1,61 +1,53 @@
-# Potato Disease Classification System using Convolutional Neural Networks (CNN)
+# Potato Disease Classification System
+
+This project aims to classify diseases in potato plants using Convolutional Neural Networks (CNN). The system is designed to identify Early Blight and Late Blight, which are significant contributors to economic loss and crop waste in agriculture.
 
 ## Introduction
-Potato Disease Classification System is a project aimed at developing a deep learning model to accurately classify Late blight and Early blight diseases affecting potato crops. The system utilizes Convolutional Neural Networks (CNNs) to analyze images of potato plants and identify the presence of diseases.
+
+The Potato Disease Classification System utilizes deep learning techniques to help farmers identify and manage potato plant diseases effectively. By leveraging CNNs, the system can analyze images of potato leaves and classify them into categories such as Early Blight, Late Blight, and Healthy.
 
 ## Installation
+
+To get started with the project, clone the repository and install the required dependencies:
+
+```bash
+git clone https://github.com/shivankursharma018/Potato-Disease-Classification-System-using-Convolutional-Neural-Networks-CNN.git
+cd Potato-Disease-Classification-System-using-Convolutional-Neural-Networks-CNN.git
+pip install -r requirements.txt
 ```
-$ git clone https://github.com/Mokkshking/Potato-Disease-Classification-System-using-Convolutional-Neural-Networks-CNN-.git
 
-or 
+## Usage
 
-$ git clone https://github.com/shivankursharma018/Potato-Disease-Classification-System-using-Convolutional-Neural-Networks-CNN.git
+1. **Data Preparation**: Ensure you have the dataset ready. You can download it from [Kaggle - PlantVillage Dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset).
 
-$ cd Potato-Disease-Classification-System-using-Convolutional-Neural-Networks-CNN
+2. **Model Training**: Use the provided Jupyter notebook to train the CNN model:
+
+```bash
+jupyter notebook Training.ipynb
 ```
 
-## Objective
-Develop a system capable of accurately classifying potato diseases into Late Blight or Early Blight using Convolutional Neural Networks (CNN), showcasing the practical application of deep learning in agricultural disease detection.
+3. **Deployment**: Deploy the trained model using FastAPI to create a backend service for disease classification.
 
-## Technologies Used
-- Python: Programming language used for overall development and integration.
-- TensorFlow and Keras: Libraries used for implementing CNN architectures.
-- NumPy: Library for numerical computation.
-- Dataset: A diverse dataset of potato images, including healthy plants and plants infected with various diseases such as  late blight, early blight, potato scab, and potato leafroll virus.
-- fastapi and uvicorn for making a Backend server.
+## Dataset
 
-## How to Use
-1. *Data Preparation*:
-   - Download the giving data set from Potato_Data
+The dataset consists of images of potato leaves categorized into three classes:
+- Potato Early Blight
+- Potato Late Blight
+- Potato Healthy Leaf
 
-2. *Model Training*:
-   - Use the provided Training.ipynb  to train the CNN model.
-   - Experiment with different architectures and hyperparameters to optimize model performance.
-   - Save the trained model weights for later use.
+## Model Training
 
-4. *Deployment*:
-   - Once satisfied with the model's performance, deploy it as a fastapi service or integrate it into applications for practical use.
-   - Develop a user-friendly interface for users to upload images of potato plants and receive predictions about the presence of diseases.
+The training process involves several steps:
+- Importing necessary libraries
+- Loading and splitting the dataset
+- Data preprocessing
+- Building and training the CNN model
+- Analyzing the model's performance
 
-## Files Included
-- Training.ipynb: Python script for training the CNN model.
-- API: FastAPI server for backend.
-- Models: Saved machine learning model.
-- Potato_Data: Saved dataset.
-- requirements.txt: List of required Python packages.
-- README.md: This file providing an overview of the project.
+## Contributing
 
-## Requirements
-- Python 3.9.13
-- TensorFlow
-- Keras
-- NumPy
-- Matplotlib 
-- Jupyter Notebook 
-- fastapi
-- uvicon
-- Pillow
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-## Contributors
-- Mokksh Kapur      : Project Lead
-- Shiavnkur Sharma  : Contributer
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
